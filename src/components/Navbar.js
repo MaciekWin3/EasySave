@@ -18,11 +18,14 @@ export default function Navbar() {
         <div className="d-flex">
           {!user && (
             <>
+              <Link to="/about">
+                <button className="btn btn-outline-success rounded-pill mx-2">About</button>
+              </Link>
               <Link to="/login">
-                <button className="btn btn-outline-info rounded-pill mx-2">Login</button>
+                <button className="btn btn-outline-success rounded-pill mx-2">Login</button>
               </Link>
               <Link to="/signup">
-                <button className="btn btn-outline-info rounded-pill mx-2">Sign up</button>
+                <button className="btn btn-outline-success rounded-pill mx-2">Sign up</button>
               </Link>
             </>
           )}

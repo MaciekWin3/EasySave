@@ -15,13 +15,21 @@ export default function Home() {
   )
 
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
-        {error && <p>{error}</p>}
-        {documents && <TransactionList transactions={documents} />}
-      </div>
-      <div className={styles.sidebar}>
-        <TransactionForm uid={user.uid} />
+    <div className="container">
+      <div className={styles.container}>
+        <div className="row">
+          <div className="col-8">
+            <div className={styles.content}>
+              {error && <p>{error}</p>}
+              {documents && <TransactionList transactions={documents} />}
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className={styles.sidebar}>
+              <TransactionForm uid={user.uid} />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
