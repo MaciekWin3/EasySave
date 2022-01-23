@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Container } from 'react-bootstrap'
 import { useSignup } from '../../hooks/useSignup'
 
 // styles
@@ -16,35 +17,58 @@ export default function Signup() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className={styles['signup-form']}>
-      <h2>sign up</h2>
-      <label>
-        <span>email:</span>
-        <input 
-          type="email" 
-          onChange={(e) => setEmail(e.target.value)} 
-          value={email}
-        />
-      </label>
-      <label>
-        <span>password:</span>
-        <input 
-          type="password" 
-          onChange={(e) => setPassword(e.target.value)} 
-          value={password} 
-        />
-      </label>
-      <label>
-        <span>display name:</span>
-        <input 
-          type="text" 
-          onChange={(e) => setDisplayName(e.target.value)}
-          value={displayName}
-        />
-      </label>
-      { !isPending && <button className="btn">sign up</button> }
-      { isPending && <button className="btn" disabled>loading</button> }
-      { error && <p>{error}</p> }
-    </form>
+    <div className="d-flex align-items-center justify-content-center">
+      <form onSubmit={handleSubmit} className={styles['signup-form']}>
+        <Container className="mt-5 border border-success pb-4 rounded shadow-lg p-3 ">
+          <div className="d-grid gap-4">
+            <h2>Sign up</h2>
+            <div className="col-md-12">
+              <label>
+                <span>Email:</span>
+                <div>
+                  <input
+                    className="form-control form-control-lg"
+                    type="email"
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
+                  />
+                </div>
+              </label>
+            </div>
+            <div className="col-md-12">
+              <label>
+                <span>Password:</span>
+                <div>
+                  <input
+                    className="form-control form-control-lg"
+                    type="password"
+                    onChange={(e) => setPassword(e.target.value)}
+                    value={password}
+                  />
+                </div>
+              </label>
+            </div>
+            <div className="col-md-12">
+              <label>
+                <span>Display name:</span>
+                <div >
+                  <input
+                    className="form-control form-control-lg"
+                    type="text"
+                    onChange={(e) => setDisplayName(e.target.value)}
+                    value={displayName}
+                  />
+                </div>
+              </label>
+            </div>
+            <div className="col-12">
+              {!isPending && <button className="btn btn-outline-success ">Sign up</button>}
+              {isPending && <button className="btn btn-outline-success " disabled>Loading</button>}
+              {error && <p>{error}</p>}
+            </div>
+          </div>
+        </Container>
+      </form>
+    </div>
   )
 }
