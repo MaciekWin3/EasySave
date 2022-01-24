@@ -9,15 +9,15 @@ Simple application to manage your spendings.
 
 ## Preview 📸
 ### Signup Screen
-![alt text for screen readers](/src/assets/read-me-pics/singup.png "Login Screens")
+![Signup Screen](src/assets/read-me-pics/Singup.PNG "Signup Screen")
 ### Login Screen
-![alt text for screen readers](/src/assets/read-me-pics/login.png "Login Screens")
+![Login Screen](src/assets/read-me-pics/Login.PNG "Login Screen")
 ### Main Page
-![alt text for screen readers](/src/assets/read-me-pics/MainPage.png "Login Screens")
+![Main Page](src/assets/read-me-pics/MainPage.PNG "Main Page")
 ### About Screen
-![alt text for screen readers](/src/assets/read-me-pics/About3.png "Login Screens")
+![About Screen](src/assets/read-me-pics/About3.PNG "About Screen")
 ### Quote Component
-![alt text for screen readers](/src/assets/read-me-pics/Quote.png "Login Screens")
+![Quote Component](src/assets/read-me-pics/Quote.PNG "Quote Component")
 
 ## Authors 📖
 * Dominika Drela
