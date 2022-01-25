@@ -7,9 +7,10 @@ A simple application that allows the user to manage their expenses.
 * [Tech Stack](#tech-stack)
 * [Preview](#preview)
 * [Authors](#authors)
-* [License ](#license)
+* [License](#license)
 
 ## General info 🔍
+The main goal of this application is to track the user's expenses. It uses Firebase at the backend side, and thanks to that provides the user with authentication and reliable database. Additionally, the app fetches data from an external API and shows quote of the day (Simple Quote Generator In React Hooks). React.js makes the UI responsive and acessible for everyone. 
 
 ## Tech Stack 💻
 * Firebase
