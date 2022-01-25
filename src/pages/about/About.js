@@ -20,7 +20,7 @@ export default function About() {
             setQuote(arrayOfQuotes.content);
             setAuthor(arrayOfQuotes.author);
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
     }
 

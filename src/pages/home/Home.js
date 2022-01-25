@@ -1,18 +1,14 @@
-import { useAuthContext } from '../../hooks/useAuthContext'
-import { useCollection } from '../../hooks/useCollection'
-
-// styles
-import styles from './Home.module.css'
-
-// components
-import TransactionForm from './TransactionForm'
-import TransactionList from './TransactionList'
+import { useAuthContext } from "../../hooks/useAuthContext";
+import { useCollection } from "../../hooks/useCollection";
+import styles from "./Home.module.css";
+import TransactionForm from "./TransactionForm";
+import TransactionList from "./TransactionList";
 
 export default function Home() {
-  const { user } = useAuthContext()
+  const { user } = useAuthContext();
   const { documents, error } = useCollection(
     'transactions', ["uid", "==", user.uid], ['createdAt', 'desc']
-  )
+  );
 
   return (
     <div className="container">

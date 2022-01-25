@@ -1,18 +1,16 @@
-import { useState } from 'react'
-import { Container } from 'react-bootstrap'
-import { useLogin } from '../../hooks/useLogin'
-
-// styles
-import styles from './Login.module.css'
+import { useState } from "react";
+import { Container } from "react-bootstrap";
+import { useLogin } from "../../hooks/useLogin"
+import styles from "./Login.module.css";
 
 export default function Login() {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const { login, error, isPending } = useLogin()
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const { login, error, isPending } = useLogin();
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    login(email, password)
+    e.preventDefault();
+    login(email, password);
   }
 
   return (
