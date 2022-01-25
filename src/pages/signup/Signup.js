@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Container } from "react-bootstrap";
 import { useSignup } from "../../hooks/useSignup";
-import styles from "./Signup.module.css";
 
 export default function Signup() {
   const [email, setEmail] = useState('');
@@ -16,7 +15,7 @@ export default function Signup() {
 
   return (
     <div className="d-flex align-items-center justify-content-center">
-      <form onSubmit={handleSubmit} className={styles['signup-form']}>
+      <form onSubmit={handleSubmit}>
         <Container className="mt-5 border border-success pb-4 rounded shadow-lg p-3 ">
           <div className="d-grid gap-4">
             <h2>Sign up</h2>

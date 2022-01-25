@@ -12,8 +12,6 @@ import { Carousel } from 'react-bootstrap';
 
 function App() {
 
-  
-
   const { authIsReady, user } = useAuthContext();
 
   return (
@@ -30,8 +28,7 @@ function App() {
           <Footer />
         </BrowserRouter>
       )}
-      <Carousel></Carousel>
-      
+      <Carousel></Carousel>    
     </div>
   );
 }
